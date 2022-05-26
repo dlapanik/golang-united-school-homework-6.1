@@ -9,7 +9,7 @@ type Triangle struct {
 
 // CalcPerimeter returns calculation result of perimeter
 func (t Triangle) CalcPerimeter() float64 {
-	return 2 * t.Side
+	return 3 * t.Side
 }
 
 // CalcArea returns calculation result of area
