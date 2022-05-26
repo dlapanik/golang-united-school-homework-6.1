@@ -96,7 +96,7 @@ func (b *box) RemoveAllCircles() error {
 	newShapes := make([]Shape, 0, b.shapesCapacity)
 
 	for i := 0; i < len(b.shapes); i++ {
-		if _, ok := b.shapes[i].(Circle); !ok {
+		if _, ok := b.shapes[i].(*Circle); !ok {
 			newShapes = append(newShapes, b.shapes[i])
 		}
 	}
